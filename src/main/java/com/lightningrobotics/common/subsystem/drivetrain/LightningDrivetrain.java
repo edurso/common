@@ -1,5 +1,7 @@
 package com.lightningrobotics.common.subsystem.drivetrain;
 
-public class LightningDrivetrain {
+import edu.wpi.first.wpilibj.SpeedController;
+
+public class LightningDrivetrain<M extends SpeedController> {
     
 }

@@ -19,3 +19,7 @@ Creates a release with the provided title and tags it with the version number.
 Creates a package with the given version number.
 
 This package is added to the GitHub Package Registry.
+
+## Javadoc
+
+Compiles and deploys javadocs to GitHub Pages on pushes to master.

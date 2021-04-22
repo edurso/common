@@ -126,7 +126,7 @@ public class LightningIMU extends SubsystemBase {
 
 	/**
 	 * Function to reset IMU heading
-	 * @return An {@link IMU.IMUFunction} that zeros the IMU heading when called
+	 * @return An {@link LightningIMU.IMUFunction} that zeros the IMU heading when called
 	 */
 	public IMUFunction zero() {
 		return this::reset;

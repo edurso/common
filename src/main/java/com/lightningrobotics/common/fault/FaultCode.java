@@ -101,11 +101,7 @@ public class FaultCode {
     }
 
     /**
-     * Runs the given function on each code. Something like:
-     * 
-     * eachCode((Codes c, Boolean state) -> {
-     *     // Do Something
-     * });
+     * Runs the given function on each code. 
      * 
      * @param fn The {@link java.util.function.BiConsumer} function to perform on each code. 
      * The function should take a code and state (true or false) as parameters.

@@ -50,7 +50,7 @@ public class Autonomous {
     public static HashMap<String, Command> getCommands() { return autons; }
     
     /**
-     * Add command to list of autonomous commands. Will group with a {@link com.lightningrobotics.common.WaitCommand.DashboardWaitCommand}
+     * Add command to list of autonomous commands. Will group with a {@link com.lightningrobotics.common.core.WaitCommand}
      * if enabled ({@link Autonomous#setHasDashboardWaitCommand(boolean)}).
      * @param name Identifier of autonomous command to be displayed on {@link edu.wpi.first.wpilibj.shuffleboard.Shuffleboard}.
      * @param cmd {@link edu.wpi.first.wpilibj2.command.Command} to be registered.
@@ -61,7 +61,7 @@ public class Autonomous {
     } 
 
     /**
-     * Configures if {@link Autonomous#register(String, Command)} will group command with a {@link com.lightningrobotics.common.WaitCommand.DashboardWaitCommand}
+     * Configures if {@link Autonomous#register(String, Command)} will group command with a {@link com.lightningrobotics.common.core.WaitCommand}
      * if enabled ({@link Autonomous#setHasDashboardWaitCommand(boolean)}).
      * @return {@code true} by default ({@link Autonomous#setHasDashboardWaitCommand(boolean)} not called), value set by 
      * {@link Autonomous#setHasDashboardWaitCommand(boolean)} otherwise.
@@ -69,7 +69,7 @@ public class Autonomous {
     public static boolean hasDashboardWaitCommand() { return wait; }
 
     /**
-     * Configures if {@link Autonomous#register(String, Command)} will group command with a {@link com.lightningrobotics.common.WaitCommand.DashboardWaitCommand}.
+     * Configures if {@link Autonomous#register(String, Command)} will group command with a {@link com.lightningrobotics.common.core.WaitCommand}.
      * @param hasWait {@code true} if there needs to be a {@link com.lightningrobotics.common.WaitCommand.DashboardWaitCommand}, false otherwise.
      */
     public static void setHasDashboardWaitCommand(boolean hasWait) {

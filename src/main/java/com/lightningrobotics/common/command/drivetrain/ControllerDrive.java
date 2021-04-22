@@ -33,24 +33,24 @@ public class ControllerDrive extends CommandBase {
 
     List<DoubleSupplier> inputs = new ArrayList<>();
 
-    public static ControllerDrive tank(LightningDrivetrain drivetrain, JoystickFilter filter, DoubleSupplier... inputs) {
+    public static ControllerDrive tank(LightningDrivetrain drivetrain, JoystickFilter filter, DoubleSupplier leftInput, DoubleSupplier rightInput) {
         // inputs = left, right
-        return new ControllerDrive(ControlType.TANK, drivetrain, filter, inputs);
+        return new ControllerDrive(ControlType.TANK, drivetrain, filter, leftInput, rightInput);
     }
 
-    public static ControllerDrive tank(LightningDrivetrain drivetrain, DoubleSupplier... inputs) {
+    public static ControllerDrive tank(LightningDrivetrain drivetrain, DoubleSupplier leftInput, DoubleSupplier rightInput) {
         // inputs = left, right
-        return tank(drivetrain, DEFAULT_FILTER, inputs);
+        return tank(drivetrain, DEFAULT_FILTER, leftInput, rightInput);
     }
 
-    public static ControllerDrive arcade(LightningDrivetrain drivetrain, JoystickFilter filter, DoubleSupplier... inputs) {
+    public static ControllerDrive arcade(LightningDrivetrain drivetrain, JoystickFilter filter, DoubleSupplier powerInput, DoubleSupplier rotationInput) {
         // inputs = speed, rotation
-        return new ControllerDrive(ControlType.ARCADE, drivetrain, filter, inputs);
+        return new ControllerDrive(ControlType.ARCADE, drivetrain, filter, powerInput, rotationInput);
     }
 
-    public static ControllerDrive arcade(LightningDrivetrain drivetrain, DoubleSupplier... inputs) {
+    public static ControllerDrive arcade(LightningDrivetrain drivetrain, DoubleSupplier powerInput, DoubleSupplier rotationInput) {
         // inputs = speed, rotation
-        return arcade(drivetrain, DEFAULT_FILTER, inputs);
+        return arcade(drivetrain, DEFAULT_FILTER, powerInput, rotationInput);
     }
 
     public static ControllerDrive swerveRobotRelative(LightningDrivetrain drivetrain, DoubleSupplier... inputs) { // TODO implement

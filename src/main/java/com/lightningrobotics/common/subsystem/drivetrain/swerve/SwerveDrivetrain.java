@@ -1,10 +1,33 @@
 package com.lightningrobotics.common.subsystem.drivetrain.swerve;
 
+import com.lightningrobotics.common.subsystem.drivetrain.DrivetrainSpeed;
 import com.lightningrobotics.common.subsystem.drivetrain.LightningDrivetrain;
+import com.lightningrobotics.common.subsystem.drivetrain.LightningGains;
 
-import edu.wpi.first.wpilibj.Encoder;
-import edu.wpi.first.wpilibj.SpeedController;
+public class SwerveDrivetrain extends LightningDrivetrain {
 
-public class SwerveDrivetrain<M extends SpeedController, E extends Encoder> extends LightningDrivetrain<M> {
+    @Override
+    public void configureMotors() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void setDriveSpeed(DrivetrainSpeed speed) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public LightningGains getGains() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public void stop() {
+        // TODO Auto-generated method stub
+        
+    }
     
 }

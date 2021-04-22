@@ -1,7 +1,19 @@
 package com.lightningrobotics.common.subsystem.drivetrain;
 
-import edu.wpi.first.wpilibj.SpeedController;
+import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
-public class LightningDrivetrain<M extends SpeedController> {
-    
+public abstract class LightningDrivetrain extends SubsystemBase {
+
+    public static enum DriveType {
+        DIFFERENTIAL, SWERVE
+    }
+
+    public abstract void configureMotors();
+
+    public abstract void setDriveSpeed(DrivetrainSpeed speed);
+
+    public abstract LightningGains getGains();
+
+    public abstract void stop();
+
 }

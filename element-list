@@ -1,6 +1,5 @@
 com.lightningrobotics.common
 com.lightningrobotics.common.auto
-com.lightningrobotics.common.auto.trajectory
 com.lightningrobotics.common.command.core
 com.lightningrobotics.common.command.drivetrain
 com.lightningrobotics.common.fault

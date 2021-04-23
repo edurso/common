@@ -99,6 +99,7 @@ public class ControllerDrive extends CommandBase {
                 differentialDrivetrain.arcadeDrive(speed, rot);
                 break;
             case SWERVE_ROBOT_RELATIVE:
+                swerveDrivetrain.stop();
                 break;
             case SWERVE_FIELD_RELATIVE:
                 break;

@@ -7,8 +7,6 @@ public class DifferentialGains extends LightningGains {
     private boolean[] leftInverts;
     private boolean[] rightInverts;
 
-    private int maxSpeed;
-
     private int trackWidth; 
 
     public int getTrackWidth() {
@@ -17,14 +15,6 @@ public class DifferentialGains extends LightningGains {
 
     public void setTrackWidth(int trackWidth) {
         this.trackWidth = trackWidth;
-    }
-
-    public int getMaxSpeed() {
-        return maxSpeed;
-    }
-
-    public void setMaxSpeed(int maxSpeed) {
-        this.maxSpeed = maxSpeed;
     }
 
     public boolean[] getLeftInverts() {

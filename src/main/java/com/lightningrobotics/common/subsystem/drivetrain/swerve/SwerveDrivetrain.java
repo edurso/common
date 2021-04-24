@@ -6,27 +6,32 @@ import com.lightningrobotics.common.subsystem.drivetrain.LightningGains;
 
 public class SwerveDrivetrain extends LightningDrivetrain {
 
+    private SwerveGains gains;
+
+    private SwerveModule[] modules;
+
+    public SwerveDrivetrain(SwerveGains gains, SwerveModule... modules) {
+        this.gains = gains;
+        this.modules = modules;
+    }
+
     @Override
     public void configureMotors() {
-        // TODO Auto-generated method stub
         
     }
 
     @Override
     public void setDriveSpeed(DrivetrainSpeed speed) {
-        // TODO Auto-generated method stub
-        
+
     }
 
     @Override
     public LightningGains getGains() {
-        // TODO Auto-generated method stub
-        return null;
+        return gains;
     }
 
     @Override
     public void stop() {
-        // TODO Auto-generated method stub
         
     }
     

@@ -122,6 +122,7 @@ public class DifferentialDrivetrain extends LightningDrivetrain {
     protected void setLeftOutput(double output) {
         withEachLeftMotor(m -> m.set(LightningMath.constrain(output, -1.0, 1.0)));
     }
+    
     protected void setRightOutput(double output) {
         withEachRightMotor(m -> m.set(LightningMath.constrain(output, -1.0, 1.0)));
     }

@@ -4,10 +4,6 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public abstract class LightningDrivetrain extends SubsystemBase {
 
-    public static enum DriveType {
-        DIFFERENTIAL, SWERVE
-    }
-
     public abstract void configureMotors();
 
     public abstract void setDriveSpeed(DrivetrainSpeed speed);

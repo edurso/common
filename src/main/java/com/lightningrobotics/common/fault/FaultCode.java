@@ -22,7 +22,7 @@ public class FaultCode {
 
     /**
      * All possible fault codes on the robot
-     * TODO - make abstract - be able to add Codes dynamically, see {@link LightningFaultCode}
+     * TODO - make abstract - be able to add Codes dynamically, see LightningFaultCode
      */
     public enum Codes {
         LEFT_ENCODER_NOT_FOUND,

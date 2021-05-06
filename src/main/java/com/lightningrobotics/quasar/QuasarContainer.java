@@ -60,6 +60,16 @@ public class QuasarContainer extends LightningContainer {
     }
 
     @Override
+    protected void configureFaultCodes() {
+
+    }
+
+    @Override
+    protected void configureFaultMonitors() {
+
+    }
+
+    @Override
     public LightningDrivetrain getDrivetrain() {
         return drivetrain;
     }

@@ -1,6 +1,6 @@
 package com.lightningrobotics.common.subsystem.drivetrain;
 
-import com.lightningrobotics.common.geometry.Rotation;
+import edu.wpi.first.wpilibj.geometry.Rotation2d;
 
 public class DrivetrainSpeed {
 
@@ -16,8 +16,8 @@ public class DrivetrainSpeed {
         this.omega = omega;
     }
 
-    public static DrivetrainSpeed fromFieldRelativeSpeeds(double vx, double vy, double omega, Rotation robotAngle) {
-        return new DrivetrainSpeed(vx * robotAngle.cos() + vy * robotAngle.sin(), -vx * robotAngle.sin() + vy * robotAngle.cos(), omega);
+    public static DrivetrainSpeed fromFieldRelativeSpeeds(double vx, double vy, double omega, Rotation2d robotAngle) {
+        return new DrivetrainSpeed(vx * robotAngle.getCos() + vy * robotAngle.getSin(), -vx * robotAngle.getSin() + vy * robotAngle.getCos(), omega);
     }
 
 }
